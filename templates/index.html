@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>每日一学</title>
+    <link rel="stylesheet" href="/static/style.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>每日一学</h1>
+            <div class="header-controls">
+                <input type="text" id="searchInput" placeholder="搜索...">
+                <button id="addNewBtn" class="btn primary">新增记录</button>
+            </div>
+        </header>
+
+        <main>
+            <div id="entriesList" class="entries-list"></div>
+            <div class="pagination">
+                <button id="prevPage" class="btn" disabled>上一页</button>
+                <span class="current-page">第 <span id="currentPage">1</span> 页，共 <span id="totalPages">1</span> 页</span>
+                <button id="nextPage" class="btn">下一页</button>
+            </div>
+        </main>
+
+        <!-- 新增/编辑对话框 -->
+        <div id="entryDialog" class="dialog">
+            <div class="dialog-content">
+                <h2 id="dialogTitle">新增学习记录</h2>
+                <form id="entryForm">
+                    <div class="form-group">
+                        <label for="date">日期</label>
+                        <input type="date" id="date" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="summary">摘要</label>
+                        <input type="text" id="summary" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="content">详细内容</label>
+                        <textarea id="content" required></textarea>
+                    </div>
+                    <div class="form-group">
+                        <label for="source">学习来源</label>
+                        <input type="text" id="source" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="gains">学习收获</label>
+                        <textarea id="gains" required></textarea>
+                    </div>
+                    <div class="dialog-buttons">
+                        <button type="button" class="btn secondary" onclick="closeDialog()">取消</button>
+                        <button type="submit" class="btn primary">保存</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+
+        <!-- 删除确认对话框 -->
+        <div id="deleteDialog" class="dialog">
+            <div class="dialog-content">
+                <h2>确认删除</h2>
+                <p>确定要删除这条记录吗？此操作不可撤销。</p>
+                <div class="dialog-buttons">
+                    <button class="btn secondary" onclick="closeDeleteDialog()">取消</button>
+                    <button class="btn danger" onclick="confirmDelete()">删除</button>
+                </div>
+            </div>
+        </div>
+
+        <!-- 详情对话框 -->
+        <div id="detailDialog" class="dialog detail-dialog">
+            <div class="dialog-content">
+                <h2>学习记录详情</h2>
+                <div id="entryDetail" class="entry-detail">
+                    <!-- 详情内容将通过JavaScript动态插入 -->
+                </div>
+                <div class="dialog-buttons">
+                    <button class="btn secondary" onclick="closeDetailDialog()">关闭</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="/static/main.js"></script>
+</body>
+</html> 

@@ -1,0 +1,26 @@
+{
+  "2025-01-11": {
+    "summary": "大模型的思维",
+    "content": "一个提示词，让 DeepSeek 的能力更上一层楼？——HiDeepSeek ",
+    "学习来源": "https://waytoagi.feishu.cn/wiki/O6oDwIu7wiw9SckSnOccY9Kunee",
+    "学习收获": "可以给AI大模型设置对应的思维能力，让大模型更加思维化"
+  },
+  "2025-01-12": {
+    "summary": "cursor 搭建每日一学 页面",
+    "content": "1 先解析需要实现的功能\n   结合昨天学习的highdeepseek思维先对大模型询问，帮忙初步的需求文档\n   结合需求文档修改和自身相符的需求\n2  利用cursor 实现具体的功能\n   先实现功能\n   功能优化\n\n\n",
+    "学习来源": "无",
+    "学习收获": "慢慢熟悉如何使用大模型进行AI编程"
+  },
+  "2025-01-15": {
+    "summary": "每日一学项目总结",
+    "content": "把项目的实现过程复盘，总结",
+    "学习来源": "https://mp.weixin.qq.com/s/jXnUIPfNatAlSIsfwE57Ig",
+    "学习收获": "学会了如何去使用新邮箱去使用claude3.5大模型"
+  },
+  "2025-01-18": {
+    "summary": "AI编程白皮书",
+    "content": "AI编程的进阶",
+    "学习来源": "https://waytoagi.feishu.cn/wiki/Hm7fwRlKpismBWkKlrWcH6kdnjh",
+    "学习收获": "通过阅读，学习了如何更高效的使用AI编程"
+  }
+}
